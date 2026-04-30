@@ -13,6 +13,25 @@ Each file is named `<problem-id>.<problem-title>.py` and contains the solution c
 | 1   | [Two Sum](1.two-sum.py)                     | Easy       | Hash map — one-pass, O(n) time / O(n) space                     |
 | 9   | [Palindrome Number](9.palindrome-number.py) | Easy       | Reverse half of the number mathematically, no string conversion |
 
+## Git Commit Convention
+
+```
+solve(<problem-id>): <problem-title> [<difficulty>]
+```
+
+**Examples:**
+
+```
+solve(1): Two Sum [Easy]
+solve(9): Palindrome Number [Easy]
+```
+
+**Rules:**
+- Use `solve` as the commit type for new solutions.
+- Problem ID and title must match the LeetCode problem exactly.
+- Difficulty is one of: `Easy`, `Medium`, `Hard`.
+- If a solution is revised, use `refactor(<id>): <title> - <brief reason>`.
+
 ## Notes
 
 - All solutions are in **Python3**.
