@@ -27,10 +27,15 @@ solve(9): Palindrome Number [Easy]
 ```
 
 **Rules:**
+
 - Use `solve` as the commit type for new solutions.
 - Problem ID and title must match the LeetCode problem exactly.
 - Difficulty is one of: `Easy`, `Medium`, `Hard`.
 - If a solution is revised, use `refactor(<id>): <title> - <brief reason>`.
+
+## References
+
+- [doocs/leetcode](https://github.com/doocs/leetcode) — Multi-language LeetCode solutions with detailed explanations.
 
 ## Notes
 
