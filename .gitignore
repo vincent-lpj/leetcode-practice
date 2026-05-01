@@ -17,3 +17,5 @@ venv/
 
 # Tests
 test.py
+
+.lcpr_data/
