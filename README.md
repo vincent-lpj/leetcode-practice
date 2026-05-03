@@ -24,32 +24,30 @@ Each file is named `<problem-id>.<problem-title>.py` and contains the solution c
 
 ## Git Commit Convention
 
-```
-solve(<problem-id>): <problem-title> [<difficulty>]
-```
+| Type       | Format                                     | When to use                       |
+| ---------- | ------------------------------------------ | --------------------------------- |
+| `solve`    | `solve(<id>): <title> [<difficulty>]`      | Submitting a new solution         |
+| `refactor` | `refactor(<id>): <title> - <brief reason>` | Updating or optimizing a solution |
+| `docs`     | `docs(<scope>): <description>`             | README, notes, or tracker changes |
 
 **Examples:**
 
 ```
 solve(1): Two Sum [Easy]
-solve(9): Palindrome Number [Easy]
-```
+solve(21): Merge Two Sorted Lists [Easy]
 
-**Rules:**
+refactor(141): Linked List Cycle - replace hash set with fast/slow pointers
+refactor(1): Two Sum - simplify loop logic
 
-- Use `solve` as the commit type for new solutions.
-- Problem ID and title must match the LeetCode problem exactly.
-- Difficulty is one of: `Easy`, `Medium`, `Hard`.
-- If a solution is revised, use `refactor(<id>): <title> - <brief reason>`.
-- For README, notes, or other documentation changes, use `docs(<scope>): <description>`.
-
-**Examples:**
-
-```
 docs(readme): update solutions table
 docs(notes): add linked list notes with techniques and Python basics
 docs(top-100-liked): add problem tracker README
 ```
+
+**Rules:**
+
+- Problem ID and title must match the LeetCode problem exactly.
+- Difficulty is one of: `Easy`, `Medium`, `Hard`.
 
 ## References
 
