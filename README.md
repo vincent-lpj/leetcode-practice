@@ -8,10 +8,19 @@ Each file is named `<problem-id>.<problem-title>.py` and contains the solution c
 
 ## Solutions
 
-| #   | Title                                       | Difficulty | Approach                                                        |
-| --- | ------------------------------------------- | ---------- | --------------------------------------------------------------- |
-| 1   | [Two Sum](1.two-sum.py)                     | Easy       | Hash map — one-pass, O(n) time / O(n) space                     |
-| 9   | [Palindrome Number](9.palindrome-number.py) | Easy       | Reverse half of the number mathematically, no string conversion |
+| #   | Title                                                                             | Difficulty | Approach                                                         |
+| --- | --------------------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------- |
+| 1   | [Two Sum](1.two-sum.py)                                                           | Easy       | Hash map — one-pass, O(n) time / O(n) space                      |
+| 9   | [Palindrome Number](9.palindrome-number.py)                                       | Easy       | Reverse half of the number mathematically, no string conversion  |
+| 13  | [Roman to Integer](13.roman-to-integer.py)                                        | Easy       | Hash map — scan left-to-right, subtract when current < next      |
+| 14  | [Longest Common Prefix](14.longest-common-prefix.py)                              | Easy       | Vertical scanning — compare column by column against first string |
+| 20  | [Valid Parentheses](20.valid-parentheses.py)                                      | Easy       | Stack — push open brackets, pop and match on close brackets      |
+| 21  | [Merge Two Sorted Lists](21.merge-two-sorted-lists.py)                            | Easy       | Dummy head — iterative merge with two pointers                   |
+| 83  | [Remove Duplicates from Sorted List](83.remove-duplicates-from-sorted-list.py)    | Easy       | Single pointer — skip adjacent duplicates in-place               |
+| 141 | [Linked List Cycle](141.linked-list-cycle.py)                                     | Easy       | Hash set — record visited nodes, O(n) time / O(n) space          |
+| 160 | [Intersection of Two Linked Lists](160.intersection-of-two-linked-lists.py)       | Easy       | Two pointers — swap tails to equalize path lengths, O(1) space   |
+| 203 | [Remove Linked List Elements](203.remove-linked-list-elements.py)                 | Easy       | Dummy head — single pointer, skip target-value nodes             |
+| 206 | [Reverse Linked List](206.reverse-linked-list.py)                                 | Easy       | Dummy head insertion — iterative, O(n) time / O(1) space         |
 
 ## Git Commit Convention
 
