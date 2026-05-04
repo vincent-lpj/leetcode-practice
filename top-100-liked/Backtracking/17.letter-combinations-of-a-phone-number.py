@@ -48,6 +48,7 @@
 # @lc code=start
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
+        # Backtracking（回溯）算法的核心思想是通过递归来构建所有可能的组合。在这个问题中，我们需要根据输入的数字字符串生成对应的字母组合。每个数字对应一组字母，我们可以通过递归地将这些字母组合起来，直到处理完所有的数字。
         # 如果输入为空，直接返回空列表
         if not digits:
             return []
