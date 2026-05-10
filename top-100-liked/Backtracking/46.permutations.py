@@ -41,6 +41,7 @@
 # @lc code=start
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
+        # 解法 1：递归传参，不回溯 pop
         # result = []
 
         # def dfs(remaining: List[int], path: List[int]):
@@ -69,6 +70,36 @@ class Solution:
         # dfs(nums, [])
 
         # return result
+
+        # 解法 2：用剩余列表 lst + 回溯
+        # results = []
+        # path = []
+
+        # def dfs(lst):
+        #     # 如果当前路径长度等于 nums 长度，说明已经形成一个完整排列
+        #     if len(path) == len(nums):
+        #         results.append(path[:])
+        #         return
+
+        #     # 遍历当前还没有被选择的数字
+        #     for num in lst:
+        #         # 选择当前数字
+        #         path.append(num)
+
+        #         # 构造下一层递归可选的数字列表
+        #         nxt_lst = lst[:]
+        #         nxt_lst.remove(num)
+
+        #         # 继续递归
+        #         dfs(nxt_lst)
+
+        #         # 回溯，撤销选择
+        #         path.pop()
+
+        # dfs(nums)
+        # return results
+
+        # 解法 3：用 path 判断是否已经使用过
         result = []
         path = []
 
